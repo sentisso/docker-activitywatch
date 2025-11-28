@@ -1,6 +1,6 @@
 FROM debian:bookworm-slim
 
-LABEL maintainer="sentisso <sentisso.dev@protonmail.comer>"
+LABEL maintainer="sentisso <sentisso.dev@protonmail.com>"
 LABEL repository="https://github.com/sentisso/docker-activitywatch"
 
 RUN apt-get update && apt-get install -y ca-certificates unzip wget \
