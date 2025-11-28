@@ -22,4 +22,3 @@ RUN apt-get purge -y ca-certificates unzip wget \
 EXPOSE 5600
 SHELL ["/bin/bash", "-c"]
 CMD ["/app/activitywatch/aw-server-rust/aw-server-rust", "--host", "0.0.0.0"]
-aw-watcher-afk,aw-watcher-window,aw-watcher-input
