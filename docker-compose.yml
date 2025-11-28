@@ -1,0 +1,11 @@
+services:
+  aw-server:
+    build: .
+    container_name: activitywatch
+    image: aw-server
+    ports:
+      - "5600:5600/tcp"
+    restart: unless-stopped
+    volumes:
+      - /home/asd/.local/share/activitywatch:/root/.local/share/activitywatch
+      - /home/asd/.config/activitywatch:/root/.config/activitywatch
